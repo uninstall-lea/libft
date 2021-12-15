@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	tmp;
 
-	tmp = n * (1 - (2 *(n < 0)));
+	tmp = n * (1 - (2 * (n < 0)));
 	if (n < 0)
 		ft_putchar_fd('-', fd);
 	if (tmp > 9)
